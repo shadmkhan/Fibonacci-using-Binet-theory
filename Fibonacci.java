@@ -1,4 +1,12 @@
-package CoreJava;
+/*
+* Shad M Khan
+* Binet theory implemented in Java to find the nth fibonacci number
+* 2nd February 2017
+*/
+
+//Input n through console
+// 0>n>10^9
+
 import java.io.*;
 import java.math.BigInteger;
 public class Fibonacci {
@@ -11,8 +19,7 @@ public class Fibonacci {
 			
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		
+		}	
 		
 		System.out.println(fibBINET(n));
 
@@ -20,25 +27,9 @@ public class Fibonacci {
 			System.out.println(fibBINET(i));
 		}
 		
-
-// 		The second fastest method with complexity O(n)		
-//		BigInteger fib=BigInteger.valueOf(1);
-//		BigInteger f1=BigInteger.valueOf(1);
-//		BigInteger f2=BigInteger.valueOf(0);
-//		for (int i = 1; i <= n; i++) {
-//			
-//			
-//			System.out.println (i + " is " + fib + " ");
-//			fib=f1.add(f2);
-//			f2=f1;
-//			f1=fib;
-//			
-//			
-//			
-//		}
-		
-		
 	}
+	// Calculate the golden ratio (φ) phi and apply the following formula
+	// Fib(n) = φ^n/√5
 	
 	static long fibBINET(long n)
 	 {
